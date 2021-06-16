@@ -1,0 +1,30 @@
+.btn-checkbox{
+  margin: 20px 0 20px 20px;
+  display: flex;
+}
+
+.input-checkbox{
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.input-checkbox:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border: 1px solid #51CBCE;
+  border-radius: 3px;
+ //left: -20px;
+}
+.input-checkbox:checked:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #51CBCE;
+  background-image: url("/images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

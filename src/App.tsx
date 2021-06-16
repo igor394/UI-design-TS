@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from "./components/sidebar/Sidebar";
+import ButtonsThemes from "./components/ButtonsThems/ButtonsThemes";
+import SelectedButton from "./components/SelectedButton/SelectedButton";
+import Checkbox from "./components/checkbox/Checkbox";
+import ToggleCheckbox from "./components/toggleCheckbox/ToggleCheckbox";
+import WrapperChat from "./components/todayChat/WrapperChat";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className='main'>
+            <Sidebar/>
+            <ButtonsThemes/>
+            <div>
+                <SelectedButton/>
+                <div style={{display: 'flex'}}>
+                    <Checkbox/>
+                    <ToggleCheckbox/>
+                </div>
+            </div>
+            <WrapperChat/>
+        </div>
+    );
 }
 
 export default App;

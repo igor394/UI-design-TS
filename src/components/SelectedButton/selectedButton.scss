@@ -1,26 +1,86 @@
-.btn-container {
-  width: 220px;
-  height: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+.btn-container-selected {
+  width: 120px;
+  height: 180px;
   border: 1px dashed black;
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 20px 0 20px;
+  padding-left:  20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 
-button {
+.btn-selected {
   border: none;
   outline: none;
-  width: 180px;
-  height: 36px;
-  box-shadow: 3px 3px 3px rgba(59, 68, 67, 0.1);
-  border-radius: 5px;
+  height: 28px;
+  border-radius: 3px;
   font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.selected {
+  background: #F1F1F1;
+width: 72px;
+  &:after {
+    content: 'selected';
+    text-transform:uppercase;
+    color: #51CBCE;
+  }
+  &:hover{
+    background: #51CBCE;
+    &:after {
+      text-transform:capitalize;
+      border-radius: 4px;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 10px;
+      color: #ffffff;
+    }
+  }
+}
+.unselected {
+  background: #fff;
+  width: 90px;
+  border: 1px solid rgba(81, 203, 206, 1);
+  &:after {
+    content: 'unselected';
+    text-transform:uppercase;
+    color: #51CBCE;
+  }
+  &:hover{
+    border: 2px solid rgba(81, 203, 206, 1);
+    &:after {
+      text-transform:capitalize;
+      border-radius: 4px;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 10px;
+    }
+  }
+}
+.unavailable {
+  background: #fff;
+  width: 90px;
+  border: 1px solid #F1F1F1;
+  &:after {
+    content: 'unavailable';
+    text-transform:uppercase;
+    color: #F1F1F1;
+  }
+  &:hover{
+    border: 2px solid #F1F1F1;
+    &:after {
+      text-transform:capitalize;
+      border-radius: 4px;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 10px;
+    }
+  }
 }

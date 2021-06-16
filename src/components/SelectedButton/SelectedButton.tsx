@@ -1,34 +1,22 @@
-import React,{FC} from 'react';
+import React, {FC} from 'react';
 import './selectedButton.scss';
-import ItemButton from "./ItemButton";
+import ItemButtonSelected from "./ItemButtonSelected";
 
 const ButtonsThem: FC = () => {
-    const PRIMARY = {
-        text: 'PRIMARY BUTTON',
-        color_text: '#FFFFFF',
-        bg: '#51CBCE'
+    const selected = {
+        name: 'selected'
     }
-    const SECONDARY = {
-        text: 'SECONDARY BUTTON',
-        color_text: '#FFFFFF',
-        bg: '#3B4443'
+    const unselected = {
+        name: 'unselected'
     }
-    const TERTIARY = {
-        text: 'TERTIARY BUTTON',
-        color_text: '#51CBCE',
-        bg: '#FFFFFF'
-    }
-    const DISABLE = {
-        text: 'DISABLE BUTTON',
-        color_text: 'rgba(59, 68, 67, 0.1)',
-        bg: '#F1F1F1'
+    const unavailable = {
+        name: 'unavailable'
     }
     return (
-        <div className='btn-container'>
-            <ItemButton {...PRIMARY}/>
-            <ItemButton {...SECONDARY}/>
-            <ItemButton {...TERTIARY}/>
-            <ItemButton {...DISABLE}/>
+        <div className='btn-container-selected'>
+            <ItemButtonSelected {...selected}/>
+            <ItemButtonSelected {...unselected}/>
+            <ItemButtonSelected {...unavailable}/>
         </div>
     );
 };

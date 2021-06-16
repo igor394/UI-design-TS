@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{FC} from 'react';
+import OptionsChat from "../../interface/optionsChat";
 
-const OptionsButton = () => {
+const OptionsButton: FC<OptionsChat> = ({name}: OptionsChat) => {
     return (
-        <div>
-            
+        <div style={{marginBottom: '5px'}}>
+            <button className='btn-options'>
+                {name}
+            </button>
         </div>
     );
 };

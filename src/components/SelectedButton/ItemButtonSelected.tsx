@@ -1,9 +1,11 @@
 import React,{FC} from 'react';
-import PropsButton from "../../interface";
-const ItemButton: FC<PropsButton> = (props: PropsButton) => {
+import PropsSelected from "../../interface/selected";
+
+const ItemButtonSelected: FC<PropsSelected> = (props: PropsSelected) => {
+
     return (
-        <button style={{background: props.bg, color: props.color_text}}>{props.text}</button>
+        <button className={'btn-selected ' + props.name}></button>
     );
 };
 
-export default ItemButton;
+export default ItemButtonSelected;

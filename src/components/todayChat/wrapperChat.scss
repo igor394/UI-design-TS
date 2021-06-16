@@ -1,0 +1,77 @@
+.chat-wrapper {
+  width: 300px;
+  height: 240px;
+  border: 1px dashed black;
+  margin: 20px;
+  padding: 20px;
+  position:relative;
+}
+
+.chat-container {
+  left: 0;
+  bottom: 0;
+  display: table;
+  box-shadow: 3px 3px 3px rgba(59, 68, 67, 0.1);
+  padding: 13px 7px 8px 7px;
+  border-radius: 3px;
+  position:absolute;
+  bottom:0;
+  margin:0 0 20px 20px;
+  span {
+    color: rgba(59, 68, 67, 1);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 4px 7px 0 7px;
+  }
+}
+
+.chat-input-group {
+  display: flex;
+}
+
+.btn-chat {
+  padding: 0;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.chat-input {
+  width: 168px;
+  margin-left: 12px;
+  border: none;
+  border-bottom: 0.5px solid rgba(59, 68, 67, 1);
+  outline:none;
+  padding-left: 4px;
+  &::placeholder {
+    color: rgba(59, 68, 67, 0.25);
+    font-family: Inter;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+.btn-options-wrapper{
+  margin: 8px 0 44px 23px;
+}
+.btn-options{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 17px;
+  border-radius: 3px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  background: #fff;
+  width: 58px;
+  border: 1px solid rgba(81, 203, 206, 1);
+    color: #51CBCE;
+}

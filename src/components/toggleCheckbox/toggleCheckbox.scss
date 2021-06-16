@@ -1,0 +1,47 @@
+.btn-toggle{
+  margin: 20px 0 20px 40px;
+  display: flex;
+}
+.input-toggle{
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-toggle:before {
+  content: "";
+  width: 48px;
+  height: 25px;
+  background-color: rgba(241, 241, 241, 1);
+  position: absolute;
+  border-radius: 15px;
+}
+.input-toggle:after{
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 5px;
+  top: 4px;
+  border-radius: 50%;
+  background-color:rgba(59, 68, 67, 0.5);
+}
+.input-toggle:checked:before {
+  content: "";
+  width: 48px;
+  height: 25px;
+  background-color: rgba(59, 68, 67, 1);
+  position: absolute;
+  border-radius: 15px;
+}
+.input-toggle:checked:after {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 26px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #51CBCE;
+}
