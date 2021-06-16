@@ -1,0 +1,26 @@
+.btn-container {
+  width: 220px;
+  height: 250px;
+  border: 1px dashed black;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-theme{
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 36px;
+  box-shadow: 3px 3px 3px rgba(59, 68, 67, 0.1);
+  border-radius: 5px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
